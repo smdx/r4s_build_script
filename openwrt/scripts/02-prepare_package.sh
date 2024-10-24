@@ -206,6 +206,7 @@ function merge_package() {
 }
 
 # AdGuard Home、SmartDNS
+rm -rf feeds/packages/net/{adguardhome,smartdns}
 merge_package master https://github.com/kenzok8/openwrt-packages package/new adguardhome luci-app-adguardhome smartdns luci-app-smartdns
 # OpenClash
 merge_package master https://github.com/kenzok8/small package/new luci-app-openclash
